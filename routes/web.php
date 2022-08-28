@@ -44,7 +44,7 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
   
 /*------------------------------------------
 --------------------------------------------
-All Admin Routes List
+All Doctor Routes List
 --------------------------------------------
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:manager'])->group(function () {
@@ -52,3 +52,13 @@ Route::middleware(['auth', 'user-access:manager'])->group(function () {
     Route::get('/manager/home', [HomeController::class, 'managerHome'])->name('manager.home');
 });
 
+//new code added
+/*------------------------------------------
+--------------------------------------------
+All Secretary Routes List
+--------------------------------------------
+--------------------------------------------*/
+Route::middleware(['auth', 'user-access:secretary'])->group(function () {
+  
+    Route::get('/secretary/home', [HomeController::class, 'secretaryHome'])->name('secretary.home');
+});

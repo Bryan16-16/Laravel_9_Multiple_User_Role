@@ -16,24 +16,33 @@ class CreateUsersSeeder extends Seeder
     public function run()
     {
         $users = [
-            [
-               'name'=>'Admin User',
-               'email'=>'admin@laratutorials.com',
-               'type'=>1,
-               'password'=> bcrypt('123456'),
-            ],
-            [
-               'name'=>'Manager User',
-               'email'=>'manager@laratutorials.com',
-               'type'=> 2,
-               'password'=> bcrypt('123456'),
-            ],
-            [
-               'name'=>'User',
-               'email'=>'user@laratutorials.com',
-               'type'=>0,
-               'password'=> bcrypt('123456'),
-            ],
+            // [
+            //    'name'=>'Admin User',
+            //    'email'=>'admin@laratutorials.com',
+            //    'type'=>1,
+            //    'password'=> bcrypt('123456'),
+            // ],
+            // [
+            //    'name'=>'Manager User',
+            //    'email'=>'manager@laratutorials.com',
+            //    'type'=> 2,
+            //    'password'=> bcrypt('123456'),
+            // ],
+            
+            // [
+            //    'name'=>'User',
+            //    'email'=>'user@laratutorials.com',
+            //    'type'=>0,
+            //    'password'=> bcrypt('123456'),
+            // ],
+
+             //new code added
+             [
+                'name'=>'secretary User',
+                'email'=>'secretary@gmail.com',
+                'type'=> 3,
+                'password'=> bcrypt('123456'),
+             ],
         ];
     
         foreach ($users as $key => $user) {
