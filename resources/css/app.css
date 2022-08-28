@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.navbar{
+
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+ text-align: center;
+
+}
+.container{
+   color: #254CA2;
+
+}
+
+.imglogo{
+    -webkit-filter: drop-shadow(1px 2px 2px rgb(133, 131, 131));
+    filter:         drop-shadow(2px 2px 2px rgb(133, 133, 133)); 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo{
+    font-weight: bold;
+    color: #607EBD;
+  }
+
+  .card-header{
+    color: #607EBD;
+  }
