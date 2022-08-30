@@ -31,3 +31,10 @@ display: block;
   .card-header{
     color: #607EBD;
   }
+
+/* login & register show password */
+  .checkbox{
+    text-align: end;
+    margin-top: 13px;
+    margin-bottom: 23px;
+}

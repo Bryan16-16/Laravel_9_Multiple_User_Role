@@ -92,5 +92,7 @@
             @yield('content')
         </main>
     </div>
+    
 </body>
+<script type="text/javascript" src="{{ mix('resources/js/app.js') }}"></script>
 </html>
