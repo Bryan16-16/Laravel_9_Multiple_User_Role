@@ -44,7 +44,9 @@ class LoginController extends Controller
         $input = $request->all();
      
         $this->validate($request, [
-            'email' => 'required|email',
+            // 'email' => 'required|email',
+            // 'password' => 'required',
+            'email' => 'required | email',
             'password' => 'required',
         ]);
      
@@ -60,10 +62,14 @@ class LoginController extends Controller
             else if (auth()->user()->type == 'secretary') {
                 return redirect()->route('secretary.home');
             }
-            // new code above
-            else{
-                return redirect()->route('home');
+            // new code above and below
+            else if(auth()->user()->type = 'patient'){
+                return redirect()->route('patient.home');
             }
+
+            // else{
+            //     return redirect()->route('home');
+            // }
         }
         else{
             return redirect()->route('login')

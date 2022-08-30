@@ -16,33 +16,38 @@ class CreateUsersSeeder extends Seeder
     public function run()
     {
         $users = [
-            // [
-            //    'name'=>'Admin User',
-            //    'email'=>'admin@laratutorials.com',
-            //    'type'=>1,
-            //    'password'=> bcrypt('123456'),
-            // ],
-            // [
-            //    'name'=>'Manager User',
-            //    'email'=>'manager@laratutorials.com',
-            //    'type'=> 2,
-            //    'password'=> bcrypt('123456'),
-            // ],
-            
-            // [
-            //    'name'=>'User',
-            //    'email'=>'user@laratutorials.com',
-            //    'type'=>0,
-            //    'password'=> bcrypt('123456'),
-            // ],
-
-             //new code added
-             [
-                'name'=>'secretary User',
+            [
+               'fname'=>'user',
+               'lname'=>'Admin',
+               'phone'=>'639754144214',
+               'email'=>'admin@gmail.com',
+               'type'=>1,
+               'password'=> bcrypt('123456'),
+            ],
+            [
+                'fname'=>'user',
+                'lname'=>'Doctor',
+                'phone'=>'639754144214',
+               'email'=>'doctor@gmail.com',
+               'type'=> 2,
+               'password'=> bcrypt('123456'),
+            ],
+            [
+                'fname'=>'user',
+               'lname'=>'Secretary',
+               'phone'=>'639754144214',
                 'email'=>'secretary@gmail.com',
                 'type'=> 3,
                 'password'=> bcrypt('123456'),
              ],
+            [
+                'fname'=>'user',
+                'lname'=>'Patient',
+                'phone'=>'639754144214',
+               'email'=>'Patient@gmail.com',
+               'type'=>0,
+               'password'=> bcrypt('123'),
+            ],
         ];
     
         foreach ($users as $key => $user) {
