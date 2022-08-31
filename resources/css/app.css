@@ -22,6 +22,8 @@ display: block;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 78px;
+    width: 78px;
   }
   .logo{
     font-weight: bold;
