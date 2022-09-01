@@ -48,9 +48,9 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 All Doctor Routes List
 --------------------------------------------
 --------------------------------------------*/
-Route::middleware(['auth', 'user-access:manager'])->group(function () {
+Route::middleware(['auth', 'user-access:doctor'])->group(function () {
   
-    Route::get('/manager/home', [HomeController::class, 'managerHome'])->name('manager.home');
+    Route::get('/doctor/home', [HomeController::class, 'doctorHome'])->name('doctor.home');
 });
 
 //new code added
