@@ -75,6 +75,19 @@
               Year-end sale
             </a>
           </li>
+<br><br><br>
+<hr>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('logout') }}"
+      onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();"> 
+              <span data-feather="log-out" class="align-text-bottom"></span>
+              Logout
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+        @csrf
+    </form>
+          </li>
         </ul>
       </div>
     </nav>
@@ -95,11 +108,6 @@
 
         
       </div>
-
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-
-      <h2>Section title</h2>
-     
     </main>
   </div>
 </div>

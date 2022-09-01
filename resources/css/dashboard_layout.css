@@ -74,8 +74,8 @@ body {
     padding-top: .75rem;
     padding-bottom: .75rem;
     font-size: 1rem;
-    background-color: rgba(0, 0, 0, .25);
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+    background-color:#607ebd;
+    box-shadow:#607ebd;
   }
   
   .navbar .navbar-toggler {
@@ -91,8 +91,8 @@ body {
   
   .form-control-dark {
     color: #fff;
-    background-color: rgba(255, 255, 255, .1);
-    border-color: rgba(255, 255, 255, .1);
+    background-color:#607ebd;
+    /* border-color: rgba(255, 255, 255, .1); */
   }
   
   .form-control-dark:focus {
@@ -102,9 +102,16 @@ body {
   
 
   .imglogo{
-    -webkit-filter: drop-shadow(1px 2px 2px rgb(133, 131, 131));
-    filter:         drop-shadow(2px 2px 2px rgb(133, 133, 133)); 
+    -webkit-filter: drop-shadow(1px 2px 2px rgb(255, 255, 255));
+    filter:         drop-shadow(2px 2px 2px rgb(255, 255, 255)); 
     height: 65px;
     width: 65px;
-    margin-left: 50px;
+    margin-left: 21px;
+  }
+  .navbar{
+    background-color: #607ebd !important;
+  }
+  .header5{
+    color: white;
+    
   }
