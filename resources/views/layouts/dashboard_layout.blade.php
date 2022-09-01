@@ -75,7 +75,7 @@
     
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
   <img class="imglogo" src="{{mix('resources/img/logo.webp')}}" alt="logo">
- <h5 class="header5">Patient Dashboard</h5>
+ <h5 class="header5">Dashboard</h5>
   <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#"></a>
   
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,17 +83,24 @@
   </button>
   <label class="form-control form-control-dark w-100 rounded-0 border-0" for=""></label>
   
- 
   <div class="navbar-nav">
+
+    
     <div class="nav-item text-nowrap">
-        
-      <a class="nav-link px-3" href="{{ route('logout') }}"
+      
+     <ul class="ul_dash">
+      <li class="li_dash"><span data-feather="user"></span> 
+      </li>
+      <li class="li_dash"> {{ Auth::user()->fname }} </li>
+      <li class="li_dash">{{ Auth::user()->lname }}</li>
+     </ul>
+      {{-- <a class="nav-link px-3" href="{{ route('logout') }}"
       onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
        {{ __('Logout') }} </a>
        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
         @csrf
-    </form>
+    </form> --}}
     </div>
   </div>
 </header>

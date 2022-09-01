@@ -115,3 +115,14 @@ body {
     color: white;
     
   }
+
+.ul_dash .li_dash{
+  display: inline-block;
+  color: white;
+  padding: 3px;
+  font-size: 15px;
+}
+.navbar-nav{
+  margin-right: 38px;
+ 
+}
