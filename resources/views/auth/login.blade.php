@@ -5,7 +5,19 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+
+
+                
                 <div style=" font-weight: bold;" class="card-header">{{ __('Login') }}</div>
+
+
+                @if(Session::get('fail'))
+                    <div class="alert_div alert alert-danger " role="alert">
+                        {{Session::get('fail')}}
+                      </div>
+                @endif
+                @csrf
+            
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
