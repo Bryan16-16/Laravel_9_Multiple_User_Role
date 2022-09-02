@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function patientHome()
     {
-        return view('patientHome');
+        return view('patient.patientHome',['dashboard_title' => 'Patient Dashboard']);
     } 
   
     /**
@@ -33,7 +33,7 @@ class HomeController extends Controller
      */
     public function adminHome()
     {
-        return view('adminHome');
+        return view('adminHome',['dashboard_title' => 'Admin Dashboard']);
     }
   
     /**
@@ -43,7 +43,7 @@ class HomeController extends Controller
      */
     public function doctorHome()
     {
-        return view('doctorHome');
+        return view('doctorHome',['dashboard_title' => 'Doctor Dashboard']);
     }
 
      /**
@@ -53,6 +53,6 @@ class HomeController extends Controller
      */
     public function secretaryHome()
     {
-        return view('secretaryHome');
+        return view('secretaryHome',['dashboard_title' => 'Secretary Dashboard']);
     }
 }

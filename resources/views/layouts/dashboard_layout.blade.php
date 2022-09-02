@@ -75,7 +75,7 @@
     
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
   <img class="imglogo" src="{{mix('resources/img/logo.webp')}}" alt="logo">
- <h5 class="header5">Dashboard</h5>
+ <p class="header5">{{$dashboard_title}}</p>
   <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#"></a>
   
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
