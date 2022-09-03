@@ -24,20 +24,14 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
 
- <img class="imglogo" src="{{mix('resources/img/logo.webp')}}" alt="logo">
-      <h5 class="logo me-auto"><a href="{{url('/')}}"></a>ONLINE APPOINTMENT SYSTEM WITH 
-        PATIENT INFORMATION MANAGEMENT</h5>
+
 
             <div class="container">
 
-           
-                <!-- <a class="navbar-brand" href="{{ url('/') }}">
-                     {{ config('app.name', 'appointment system') }} 
-                    
-                </a> -->
-
-                <!-- <p>ONLINE APPOINTMENT SYSTEM WITH 
-        PATIENT INFORMATION MANAGEMENT</p> -->
+            <img class="imglogo" src="{{mix('resources/img/logo.webp')}}" alt="logo">
+      <h5 class="logo me-auto"><a href="{{url('/')}}"></a>ONLINE APPOINTMENT SYSTEM WITH 
+        PATIENT INFORMATION MANAGEMENT</h5>
+             
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
