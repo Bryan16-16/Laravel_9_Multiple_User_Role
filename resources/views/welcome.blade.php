@@ -13,7 +13,7 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <link href="{{ mix ('resources/css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix ('resources/css/welcome.css') }}" rel="stylesheet">
 
     <script src="https://unpkg.com/feather-icons"></script>
 
@@ -29,7 +29,7 @@
       {{-- <h5 class="logo me-auto"><a href="{{url('/')}}"></a>ONLINE APPOINTMENT SYSTEM WITH 
         PATIENT INFORMATION MANAGEMENT</h5> --}}
 
-            <div class="container">
+            <div class="container-fluid">
  <img class="imglogo" src="{{mix('resources/img/logo.webp')}}" alt="logo">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -52,7 +52,7 @@
                       </li>
                       
                       <li class="nav-item">
-                        <a style="font-weight: bold; color:#607ebd;" class="nav-link" href="#">  <span data-feather="calendar" class="size-10 align-text-bottom"></span> Book an appointment</a>
+                        <a style="font-weight: bold; color:#607ebd;" class="nav-link" href="{{ route('login') }}">  <span data-feather="calendar" class="size-10 align-text-bottom"></span> Book an appointment</a>
                       </li>
                     </ul>
                   
@@ -109,11 +109,40 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div>
+   <div class="container-md">
+<h1><strong>Grateful Beginnings Medical</strong></h1>
+<h5 class="h4text">Dental, Lying-in, and Pediatrician Clinic</h5>
+
+
+<br>
+<br>
+<a href="{{ route('login') }}">
+<button type="button" class="btn btn-primary" >  Book an appointment</button></a>
+
+<br><br><br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque laborum ratione, iusto autem reiciendis assumenda sapiente velit. Tenetur dolore consequuntur illum nobis temporibus dolor facilis voluptate nam molestias corrupti?
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem labore reiciendis magni dolorem soluta eum minima veritatis deleniti qui sapiente eveniet, beatae iusto? Porro laborum, repellat voluptate magni unde officia!Lorem
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam dolor ex aliquid obcaecati ea illum sequi soluta quos incidunt porro, ipsam repellendus adipisci ipsa voluptate similique laboriosam fugit dolorum labore!
+</p>
+
+
+<br>
+<br><br><br><br>
+
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur laudantium quisquam culpa aliquid odio nobis totam veniam distinctio odit fuga quis atque quas perferendis assumenda, repudiandae velit cum, animi fugit.
+<br><br>
+<h3>location</h3>
+   <div class="ratio"  style="--bs-aspect-ratio: 30%;">
+    <iframe src="https://maps.google.com/maps?q=Grateful%20Beginnings%20Medical,%20Pediatric,%20Dental%20and%20Lying%20in%20Clinic,%20Calamba,%204027%20Laguna&t=&z=13&ie=UTF8&iwloc=&output=embed" title="Maps" ></iframe>
+  </div>
+
+  <br><br><br>
+   </div>
+
     
+    
+
+
 </body>
 <script type="text/javascript" src="{{ mix('resources/js/app.js') }}"></script>
 <script>
