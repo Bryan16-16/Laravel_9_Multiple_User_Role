@@ -85,13 +85,15 @@ class LoginController extends Controller
             // new code above and below
             elseif (auth()->user()->type = 'patient') {
                 return redirect()->route('patient.home');
-            } else {
+            } 
+            else {
                 // return redirect()->route('home');
                 return redirect()
                     ->route('login')
                     ->with('error', 'Email-Address And Password Are Wrong.');
             }
-        } else {
+        } 
+        else {
             return redirect()->route('login')
                 ->with('error','Email-Address And Password Are Wrong.');
 
