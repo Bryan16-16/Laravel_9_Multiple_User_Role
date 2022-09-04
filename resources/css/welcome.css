@@ -48,7 +48,9 @@ li{
     color: #607ebd;
     background-image: url("/resources/img/undraw_doctors.png");
     background-repeat: no-repeat;
-    background-size: 500px 500px;
+    background-position: right top;
+    background-size: 550px 500px;
+    background-color: #FFFFFF;
    
     
 
@@ -56,4 +58,9 @@ li{
   .h4text{
     margin-top: 10px;
     
+  }
+  footer{
+    background-color: #607ebd;
+    margin: none;
+    padding: none;
   }
