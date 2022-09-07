@@ -37,7 +37,7 @@
 
                         {{-- font style navbar not fix to change to nunito --}}
 
-                        <a style="font-weight: bold; color:#607ebd" class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a style="font-weight: bold; color:#607ebd" class="nav-link active" aria-current="page" href="#home">Home</a>
                       </li>
                       <li class="nav-item">
                         <a style="font-weight: bold; color:#607ebd;" class="nav-link" href="#service">Services</a>
@@ -114,7 +114,7 @@
 
         </nav>
 
-   <div class="container-md">
+   <div id="home" class="container-md">
 <h1><strong>Grateful Beginnings Medical</strong></h1>
 <h5 class="h4text">Dental, Lying-in, and Pediatrician Clinic</h5>
 

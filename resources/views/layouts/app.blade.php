@@ -28,9 +28,10 @@
 
             <div class="container">
 
-            <img class="imglogo" src="{{mix('resources/img/logo.webp')}}" alt="logo">
-      <h5 class="logo me-auto"><a href="{{url('/')}}"></a>ONLINE APPOINTMENT SYSTEM WITH 
-        PATIENT INFORMATION MANAGEMENT</h5>
+            <a class="imglogo" href="/"><img class="imglogo" src="{{mix('resources/img/logo.webp')}}"  alt="logo">
+            <a style="text-decoration:none ;" href="{{url('/')}}">
+      <h5 class="logo me-auto">ONLINE APPOINTMENT SYSTEM WITH 
+        PATIENT INFORMATION MANAGEMENT  </h5></a>
              
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
