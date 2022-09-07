@@ -1,15 +1,35 @@
 @extends('layouts.app')
 
 @section('content')
+
+
 <div class="container">
+
+ {{-- toast  --}}
+    <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">Bootstrap</strong>
+          <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Hello, world! This is a toast message.
+        </div>
+      </div>
+
+    {{-- new code added alert primary 
+    you need to login or register to Book an appoinment  --}}
+<div class="alert alert-primary" role="alert">
+ You need to <strong>login or Register</strong>, to book an appointment.
+</div>
+
+
     <div class="row justify-content-center">
+        
         <div class="col-md-8">
             <div class="card">
-
-
-                
                 <div style=" font-weight: bold;" class="card-header">{{ __('Login') }}</div>
-
 
                 @if(Session::get('fail'))
                     <div class="alert_div alert alert-danger " role="alert">
@@ -90,5 +110,13 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+
+
+
+
+    </script>
 </div>
 @endsection
