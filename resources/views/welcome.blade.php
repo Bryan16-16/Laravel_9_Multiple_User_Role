@@ -30,7 +30,8 @@
         PATIENT INFORMATION MANAGEMENT</h5> --}}
 
             <div class="container-fluid">
- <img class="imglogo" src="{{mix('resources/img/logo.webp')}}" alt="logo">
+ <a class="imglogo" href="/">
+  <img class="imglogo" src="{{mix('resources/img/logo.webp')}}" alt="logo"></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
