@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
  
 use Illuminate\Http\Request;
+
+use App\Models\user;
   
 class HomeController extends Controller
 {
@@ -25,6 +27,11 @@ class HomeController extends Controller
     {
         return view('patient.patientHome',['dashboard_title' => 'Patient Dashboard']);
     } 
+
+    function patient_setting(){
+        $data = ['LoggedUserInfo' => user::where('id', '=', session('LoggedUser'))->first()];
+        return view('patient.patientSetting', $data,['dashboard_title' => 'Patient Dashboard']);
+    }
   
     /**
      * Show the application dashboard.

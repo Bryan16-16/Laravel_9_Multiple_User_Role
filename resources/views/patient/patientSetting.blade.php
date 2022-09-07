@@ -8,7 +8,7 @@
         <ul class="nav flex-column">
           <li class="nav-item">
            <p></p>
-            <a class="nav-link active" aria-current="page" href="/patient/home">
+            <a class="nav-link" aria-current="page" href="/patient/home">
               <span data-feather="home" class="align-text-bottom"></span>
               Dashboard
             </a>
@@ -26,7 +26,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/patient/profile-setting">
+            <a class="nav-link active" href="/patient/profile-setting">
               <span data-feather="edit" class="align-text-bottom"></span>
               Profile
             </a>
@@ -52,7 +52,7 @@
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
+        <h1 class="h2">Profile Setting</h1>
          
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
