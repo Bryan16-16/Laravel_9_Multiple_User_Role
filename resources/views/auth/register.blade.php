@@ -107,6 +107,8 @@
                                     {{ __('Register') }}
                                 </button>
                             </div>
+                            <br><br>
+                            <a style="text-decoration:none ;" class="a_register btn btn-link" href="login">I already have an account, sign in</a>
                         </div>
                     </form>
                 </div>

@@ -32,7 +32,7 @@
             <div class="container">
 
             <a class="imglogo" href="/"><img class="imglogo" src="{{mix('resources/img/logo.webp')}}"  alt="logo">
-            <a style="text-decoration:none ;" href="{{url('/')}}">
+            <a style="text-decoration:none;" href="{{url('/')}}">
       <h5 class="logo me-auto">ONLINE APPOINTMENT SYSTEM WITH 
         PATIENT INFORMATION MANAGEMENT  </h5></a>
              
