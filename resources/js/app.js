@@ -14,3 +14,21 @@ togglePassword.addEventListener("click", function (e) {
         con_password.getAttribute("type") === "password" ? "text" : "password";
     con_password.setAttribute("type", type);
 });
+
+
+function validate() {
+    var fname = document.getElementById("FirstName");
+    var alpha = /^[a-zA-Z\s-, ]+$/;  
+    if (fname.value == "") {
+        alert('Please enter Name');
+        return false;
+    }
+    else if (!fname.value.match(alpha)) {
+        alert('Invalid ');       
+        return false;
+   }
+   else 
+   {
+    return true;
+   }
+}

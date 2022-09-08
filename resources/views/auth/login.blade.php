@@ -20,9 +20,21 @@
 
     {{-- new code added alert primary 
     you need to login or register to Book an appoinment  --}}
-<div class="alert alert-primary" role="alert">
- You need to <strong>login or Register</strong>, to book an appointment.
-</div>
+
+
+    @if(session()->has('div_alert'))
+    {{-- <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div> --}}
+
+    <div class="alert alert-primary" role="alert">
+        You need to <strong>login or Register</strong>, to book an appointment. 
+       </div> 
+@endif
+
+{{-- <div class="div_alert alert alert-primary" role="alert">
+ You need to <strong>login or Register</strong>, to book an appointment. 
+</div> --}}
 
 
     <div class="row justify-content-center">
@@ -112,8 +124,6 @@
     </div>
 
     <script>
-
-
 
 
 
