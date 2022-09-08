@@ -51,13 +51,6 @@
                       <li class="nav-item">
                         <a style="font-weight: bold; color:#607ebd;" class="nav-link" href="#about">About us</a>
                       </li>
-                      
-                      <li class="nav-item">
-                        <a style="font-weight: bold; color:#607ebd;" class="nav-link" href="{{ route('login') }}">  <span data-feather="calendar" class="size-10 align-text-bottom"></span> Book an appointment</a>
-                      </li>
-                    </ul>
-                  
-                    
                   </div>
    
 {{-- old position of button hamburger menu below --}}
@@ -123,7 +116,8 @@
 <br>
 <br>
 <a href="{{ route('login') }}">
-<button type="button" class="btn btn-primary" >  Book an appointment</button></a>
+<button style=" -webkit-filter: drop-shadow(1px 2px 2px rgb(133, 131, 131));
+    filter: drop-shadow(2px 2px 2px rgb(133, 133, 133));" type="button" class="btn btn-primary" > <span data-feather="calendar" class="size-10 align-text-bottom"></span> Book an appointment</button></a>
 
 <br><br><br>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque laborum ratione, iusto autem reiciendis assumenda sapiente velit. Tenetur dolore consequuntur illum nobis temporibus dolor facilis voluptate nam molestias corrupti?
