@@ -22,7 +22,12 @@
 
 </head>
 <body>
+
+  
     <div id="app">
+
+      
+      
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
 
 
@@ -30,6 +35,9 @@
         PATIENT INFORMATION MANAGEMENT</h5> --}}
 
             <div class="container-fluid">
+
+           
+
  <a class="imglogo" href="/">
   <img class="imglogo" src="{{mix('resources/img/logo.webp')}}" alt="logo"></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -39,6 +47,7 @@
                         {{-- font style navbar not fix to change to nunito --}}
 
                         <a style="font-weight: bold; color:#607ebd" class="nav-link active" aria-current="page" href="#home">Home</a>
+                        
                       </li>
                       <li class="nav-item">
                         <a style="font-weight: bold; color:#607ebd;" class="nav-link" href="#service">Services</a>
@@ -56,7 +65,8 @@
 {{-- old position of button hamburger menu below --}}
 
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+{{-- login register code below --}}
+                {{-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                     </ul>
@@ -97,7 +107,8 @@
                             </li>
                         @endguest
                     </ul>
-                </div>
+                </div> --}}
+                
 
 
             </div>
