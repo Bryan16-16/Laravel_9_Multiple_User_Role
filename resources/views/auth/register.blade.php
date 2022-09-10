@@ -97,6 +97,9 @@
                                         <input type="checkbox" id="togglePassword"> Show Password</label>
 
                                 </div>
+                                <div>
+                                    <p>By clicking <strong>Register</strong>, you agree with the <strong>Terms and Condition</strong></p>
+                                </div>
 
                             </div>
                         </div>
@@ -108,7 +111,7 @@
                                 </button>
                             </div>
                             <br><br>
-                            <a style="text-decoration:none ;" class="a_register btn btn-link" href="login">I already have an account, sign in</a>
+                            <a style="text-decoration:none ;" class="a_register btn btn-link" href="login">I already have an account, login</a>
                         </div>
                     </form>
                 </div>

@@ -5,37 +5,19 @@
 
 <div class="container">
 
- {{-- toast  --}}
-    <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" data-bs-delay="2000">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
-          <img src="..." class="rounded me-2" alt="...">
-          <strong class="me-auto">Bootstrap</strong>
-          <small>11 mins ago</small>
+          {{-- <img src="..." class="rounded me-2" alt="..."> --}}
+          <strong class="me-auto">Hi</strong>
           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
         <div class="toast-body">
-          Hello, world! This is a toast message.
+            You need to <strong>login or Register</strong>, to book an appointment. 
         </div>
       </div>
-
-    {{-- new code added alert primary 
-    you need to login or register to Book an appoinment  --}}
-
-
-    @if(session()->has('div_alert'))
-    {{-- <div class="alert alert-success">
-        {{ session()->get('message') }}
-    </div> --}}
-
-    <div class="alert alert-primary" role="alert">
-        You need to <strong>login or Register</strong>, to book an appointment. 
-       </div> 
-@endif
-
-{{-- <div class="div_alert alert alert-primary" role="alert">
- You need to <strong>login or Register</strong>, to book an appointment. 
-</div> --}}
-
+    </div>
+    
 
     <div class="row justify-content-center">
         
@@ -129,6 +111,11 @@
     <script>
 
 
+window.onload = (event) => {
+    var toastLiveExample = document.getElementById('liveToast')
+    var toast = new bootstrap.Toast(toastLiveExample)
+    toast.show()
+}
 
     </script>
 </div>

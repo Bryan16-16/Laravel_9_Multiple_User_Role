@@ -1,4 +1,4 @@
-import "./bootstrap";
+// import "./bootstrap";
 //login & register show password
 const togglePassword = document.querySelector("#togglePassword");
 const password = document.querySelector("#password");
@@ -15,7 +15,7 @@ togglePassword.addEventListener("click", function (e) {
     con_password.setAttribute("type", type);
 });
 
-
+//register validation first name and last name
 function validate() {
     var fname = document.getElementById("FirstName");
     var alpha = /^[a-zA-Z\s-, ]+$/;  
@@ -32,3 +32,5 @@ function validate() {
     return true;
    }
 }
+
+
