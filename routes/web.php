@@ -40,11 +40,11 @@ All Admin Routes List
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
   
-    Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
-    Route::get('/admin/admin-setting', [HomeController::class, 'admin_setting'])->name('admin.setting');
-    Route::get('/admin/admin-doctor', [HomeController::class, 'admin_doctor'])->name('admin.doctor');
-    Route::get('/admin/admin-secretary', [HomeController::class, 'admin_secretary'])->name('admin.secretary');
-    Route::get('/admin/admin-patient', [HomeController::class, 'admin_patient'])->name('admin.patient');
+    Route::get('/admin/dashboard', [HomeController::class, 'admin_dashboard'])->name('admin.dashboard');
+    Route::get('/admin/profile', [HomeController::class, 'admin_setting'])->name('admin.setting');
+    Route::get('/admin/doctor', [HomeController::class, 'admin_doctor'])->name('admin.doctor');
+    Route::get('/admin/secretary', [HomeController::class, 'admin_secretary'])->name('admin.secretary');
+    Route::get('/admin/patient', [HomeController::class, 'admin_patient'])->name('admin.patient');
     
 
 });

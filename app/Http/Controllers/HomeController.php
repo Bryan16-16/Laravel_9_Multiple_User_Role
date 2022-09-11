@@ -38,9 +38,9 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function adminHome()
+    public function admin_dashboard()
     {
-        return view('admin.adminHome',['dashboard_title' => 'ADMIN']);
+        return view('admin.admin_dashboard',['dashboard_title' => 'ADMIN']);
     }
     // aka admin profile
     function admin_setting(){

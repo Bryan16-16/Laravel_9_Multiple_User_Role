@@ -7,25 +7,25 @@
       <div class="position-sticky pt-3 sidebar-sticky">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/admin/home">
+            <a class="nav-link" aria-current="page" href="/admin/dashboard">
               <span data-feather="home" class="align-text-bottom"></span>
               Dashboard
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/admin/admin-doctor">
+            <a class="nav-link" href="/admin/doctor">
               <span data-feather="users" class="align-text-bottom"></span>
               Doctor
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/admin/admin-patient">
+            <a class="nav-link active" href="/admin/patient">
               <span data-feather="users" class="align-text-bottom"></span>
              Patient
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/admin/admin-secretary">
+            <a class="nav-link" href="/admin/secretary">
               <span data-feather="users" class="align-text-bottom"></span>
               Secretary
             </a>
@@ -37,7 +37,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/admin/admin-setting">
+            <a class="nav-link" href="/admin/profile">
               <span data-feather="edit" class="align-text-bottom"></span>
               Profile
             </a>
