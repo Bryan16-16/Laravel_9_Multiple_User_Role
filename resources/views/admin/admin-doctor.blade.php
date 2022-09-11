@@ -7,24 +7,46 @@
       <div class="position-sticky pt-3 sidebar-sticky">
         <ul class="nav flex-column">
           <li class="nav-item">
-           
-            <a class="nav-link active" aria-current="page" href="#">
+            <a class="nav-link " aria-current="page" href="/admin/home">
+              <span data-feather="home" class="align-text-bottom"></span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/admin/admin-doctor">
               <span data-feather="users" class="align-text-bottom"></span>
-              Doctor Schedule
+              Doctor
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/admin-patient">
+              <span data-feather="users" class="align-text-bottom"></span>
+             Patient
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/admin-secretary">
+              <span data-feather="users" class="align-text-bottom"></span>
+              Secretary
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <span data-feather="file" class="align-text-bottom"></span>
-              Patient Record
+              <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+              Analytics
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/admin/admin-setting">
               <span data-feather="edit" class="align-text-bottom"></span>
               Profile
             </a>
-          </li>
+          </li> 
+      
+
+
+         
+
 <hr>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('logout') }}"
@@ -43,7 +65,7 @@
       </div>
     </nav>
 
-  
+    
 
     
   </div>

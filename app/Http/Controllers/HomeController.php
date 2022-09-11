@@ -42,6 +42,23 @@ class HomeController extends Controller
     {
         return view('admin.adminHome',['dashboard_title' => 'ADMIN']);
     }
+    // aka admin profile
+    function admin_setting(){
+        $data = ['LoggedUserInfo' => user::where('id', '=', session('LoggedUser'))->first()];
+        return view('admin.admin-profile', $data,['dashboard_title' => 'ADMIN ']);
+    }
+    function admin_doctor(){
+        $data = ['LoggedUserInfo' => user::where('id', '=', session('LoggedUser'))->first()];
+        return view('admin.admin-doctor', $data,['dashboard_title' => 'ADMIN ']);
+    }
+    function admin_secretary(){
+        $data = ['LoggedUserInfo' => user::where('id', '=', session('LoggedUser'))->first()];
+        return view('admin.admin-secretary', $data,['dashboard_title' => 'ADMIN ']);
+    }
+    function admin_patient(){
+        $data = ['LoggedUserInfo' => user::where('id', '=', session('LoggedUser'))->first()];
+        return view('admin.admin-patient', $data,['dashboard_title' => 'ADMIN ']);
+    }
   
     /**
      * Show the application dashboard.
@@ -50,7 +67,7 @@ class HomeController extends Controller
      */
     public function doctorHome()
     {
-        return view('doctor.doctorHome',['dashboard_title' => 'Doctor Dashboard']);
+        return view('doctor.doctorHome',['dashboard_title' => 'DOCTOR']);
     }
 
      /**
@@ -60,6 +77,6 @@ class HomeController extends Controller
      */
     public function secretaryHome()
     {
-        return view('secretary.secretaryHome',['dashboard_title' => 'Secretary Dashboard']);
+        return view('secretary.secretaryHome',['dashboard_title' => 'SECRETARY']);
     }
 }
