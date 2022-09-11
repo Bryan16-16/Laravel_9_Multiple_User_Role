@@ -113,10 +113,11 @@ body {
   }
   .header5{
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     margin-left: 10px;
     margin-top: 10px;
+    letter-spacing: 2px;
   }
 
 .ul_dash .li_dash{

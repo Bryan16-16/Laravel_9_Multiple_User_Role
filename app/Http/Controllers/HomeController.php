@@ -25,12 +25,12 @@ class HomeController extends Controller
      */
     public function patientHome()
     {
-        return view('patient.patientHome',['dashboard_title' => 'Patient Dashboard']);
+        return view('patient.patientHome',['dashboard_title' => 'PATIENT']);
     } 
 
     function patient_setting(){
         $data = ['LoggedUserInfo' => user::where('id', '=', session('LoggedUser'))->first()];
-        return view('patient.patientSetting', $data,['dashboard_title' => 'Patient Dashboard']);
+        return view('patient.patientSetting', $data,['dashboard_title' => 'PATIENT ']);
     }
   
     /**
@@ -40,7 +40,7 @@ class HomeController extends Controller
      */
     public function adminHome()
     {
-        return view('adminHome',['dashboard_title' => 'Admin Dashboard']);
+        return view('admin.adminHome',['dashboard_title' => 'ADMIN']);
     }
   
     /**
@@ -50,7 +50,7 @@ class HomeController extends Controller
      */
     public function doctorHome()
     {
-        return view('doctorHome',['dashboard_title' => 'Doctor Dashboard']);
+        return view('doctor.doctorHome',['dashboard_title' => 'Doctor Dashboard']);
     }
 
      /**
@@ -60,6 +60,6 @@ class HomeController extends Controller
      */
     public function secretaryHome()
     {
-        return view('secretaryHome',['dashboard_title' => 'Secretary Dashboard']);
+        return view('secretary.secretaryHome',['dashboard_title' => 'Secretary Dashboard']);
     }
 }

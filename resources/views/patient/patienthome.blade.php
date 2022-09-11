@@ -6,17 +6,12 @@
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
       <div class="position-sticky pt-3 sidebar-sticky">
         <ul class="nav flex-column">
+      
           <li class="nav-item">
-           <p></p>
-            <a class="nav-link active" aria-current="page" href="/patient/home">
-              <span data-feather="home" class="align-text-bottom"></span>
-              Dashboard
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+        
+            <a class="nav-link active" href="patient/doctor-schedule">
               <span data-feather="users" class="align-text-bottom"></span>
-              Doctor Schedule List
+              Doctor Schedule
             </a>
           </li>
           <li class="nav-item">

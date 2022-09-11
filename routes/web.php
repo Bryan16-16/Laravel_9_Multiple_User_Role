@@ -28,7 +28,7 @@ All Normal Users Routes List
 --------------------------------------------*/
 Route::middleware(['auth', 'user-access:user'])->group(function () {
   
-    Route::get('/patient/home', [HomeController::class, 'patientHome'])->name('patient.home');
+    Route::get('/patient/doctor-schedule', [HomeController::class, 'patientHome'])->name('patient.home');
 
     Route::get('/patient/profile-setting', [HomeController::class, 'patient_setting'])->name('patient.setting');
 });
