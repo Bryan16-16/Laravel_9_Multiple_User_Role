@@ -50,7 +50,7 @@ class CreateUsersSeeder extends Seeder
                'email'=>'patient@gmail.com',
                'type'=>0,
                'email_verified_at'=>'2022-09-11 04:55:07',
-               'password'=> bcrypt('123'),
+               'password'=> bcrypt('123456'),
             ],
         ];
     

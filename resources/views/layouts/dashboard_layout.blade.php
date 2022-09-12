@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.101.0">
+
   <title>Dashboard</title>
   {{-- version 5.2 bootstrap
     https://getbootstrap.com/docs/5.2/getting-started/introduction/ --}}
@@ -126,6 +127,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
   feather.replace()
+
+  function refreshPage()
+    {
+        window.location = window.location.href;
+    }
+    setInterval('refreshPage()', 61000);
 </script>
 
 </html>
