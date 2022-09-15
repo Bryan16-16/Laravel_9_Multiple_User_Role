@@ -130,3 +130,15 @@ body {
   margin-right: 38px;
  
 }
+
+
+/* Removes Default Link formatting from Full Calendar*/
+a.fc-daygrid-day-number{
+  
+  text-decoration:none;
+}
+
+a.fc-col-header-cell-cushion{
+  
+  text-decoration:none;
+}

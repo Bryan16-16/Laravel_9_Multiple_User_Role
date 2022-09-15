@@ -203,7 +203,7 @@
 </body>
 <script type="text/javascript" src="{{ mix('resources/js/app.js') }}"></script>
 <script>
-    feather.replace()
+    feather.replace();
 </script>
 
 </html>

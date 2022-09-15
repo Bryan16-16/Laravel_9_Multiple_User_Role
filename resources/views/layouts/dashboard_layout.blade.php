@@ -20,6 +20,8 @@
 
   <script src="https://unpkg.com/feather-icons"></script>
 
+  
+
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -76,7 +78,12 @@
 
   <!-- Custom styles for this template -->
   <link href="{{ mix ('resources/css/dashboard_layout.css') }}" rel="stylesheet">
-</head>
+
+<!-- full calendar -->
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+  
+  </head>
 
 <body>
 
@@ -128,11 +135,22 @@
 <script>
   feather.replace()
 
-  function refreshPage()
-    {
-        window.location = window.location.href;
-    }
-    setInterval('refreshPage()', 61000);
+  // function refreshPage()
+  //   {
+  //       window.location = window.location.href;
+  //   }
+  //   setInterval('refreshPage()', 61000);
+
+
+    // for full calendar
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
 </script>
 
 </html>
