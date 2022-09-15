@@ -70,7 +70,7 @@ class LoginController extends Controller
             }
 
 
-
+            
 
         if (auth()->attempt(['email' => $input['email'], 'password' => $input['password']])) {
             if (auth()->user()->type == 'admin') {
@@ -79,13 +79,15 @@ class LoginController extends Controller
             elseif (auth()->user()->type == 'doctor') {
                 return redirect()->route('doctor.home');
             }
-            //new code added
+            
             elseif (auth()->user()->type == 'secretary') {
                 return redirect()->route('secretary.home');
             }
             // new code above and below
             elseif (auth()->user()->type = 'patient') {
-                return redirect()->route('patient.home');
+                return redirect()->route('patient.home') 
+                //login success message
+                ->with('message', 'Patient');
             } 
             else {
                 // return redirect()->route('home');
