@@ -48,8 +48,8 @@
 
                             {{-- font style navbar not fix to change to nunito --}}
 
-                            <a style="font-weight: bold; color:#607ebd" class="nav-link active" aria-current="page"
-                                href="#home">Home</a>
+                            <!-- <a style="font-weight: bold; color:#607ebd" class="nav-link active" aria-current="page"
+                                href="#home">Home</a> -->
 
                         </li>
                         <li class="nav-item">

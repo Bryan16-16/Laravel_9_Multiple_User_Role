@@ -2,6 +2,10 @@
 
 @section('content')
 <div class="container">
+
+
+
+
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -13,9 +17,9 @@
 
                         <div class="row mb-3">
                             <label for="fname" class="col-md-4 col-form-label text-md-end">{{ __('First Name') }}</label>
-
+                            <!-- style="text-transform:capitalize" -->
                             <div class="col-md-6">
-                                <input id="fname" type="text" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus placeholder="Enter first name">
+                                <input  id="fname" type="text" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" required autocomplete="fname" autofocus placeholder="Enter first name">
 
                                 @error('fname')
                                 <span class="invalid-feedback" role="alert">
@@ -30,7 +34,7 @@
                             <label for="lname" class="col-md-4 col-form-label text-md-end">{{ __('Last Name') }}</label>
 
                             <div class="col-md-6">
-                                <input id="lname" type="text" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus placeholder="Enter last name">
+                                <input style="text-transform:capitalize" id="lname" type="text" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" required autocomplete="lname" autofocus placeholder="Enter last name">
 
                                 @error('lname')
                                 <span class="invalid-feedback" role="alert">

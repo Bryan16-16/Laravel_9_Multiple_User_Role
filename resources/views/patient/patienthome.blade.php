@@ -60,15 +60,9 @@
           </button>
         </div> --}}
 
-
+       
 
             <!-- login message -->
-            {{-- @if(session('message'))
-            <div class="alert alert-success">
-                <strong>Success!</strong> You login in the admin dashboard{{$message}}
-            </div>
-            @endif --}}
-         
 
         @if(Session::has('message'))
       <div class="alert alert-primary">
@@ -79,6 +73,21 @@
   @endif
 
 
+  {{-- @if(Session::has('message'))
+  <div class="alert alert-primary">
+      
+    &nbsp<strong>Success!</strong> You login as {{ Session::get('message') }} &nbsp &nbsp
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+@endif
+
+@if (session('success'))
+   <h3>{{ Session::get('success') }}</h3>
+@endif --}}
+
+{{-- @if (session('success')) 
+   {{ session('success') }} 
+@endif --}}
 
 
       </div>

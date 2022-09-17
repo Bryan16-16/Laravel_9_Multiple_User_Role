@@ -42,6 +42,12 @@
               Profile
             </a>
           </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <span data-feather="settings" class="align-text-bottom"></span>
+              Settings
+            </a>
+          </li> 
       
 
 

@@ -8,6 +8,11 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
+
+use Illuminate\Support\Facades\Session;
+
+
 
 class RegisterController extends Controller
 {
@@ -31,6 +36,12 @@ class RegisterController extends Controller
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
+//     public function redirectTo() : string
+// {
+//     return redirect('/patient/doctor-schedule')->withSuccess('Success message');
+    
+// }
+
     /**
      * Create a new controller instance.
      *
@@ -48,15 +59,19 @@ class RegisterController extends Controller
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
-    {
+    {Session::flash('message', 'User successfully created.');
         return Validator::make($data, [
-            'fname' => ['required', 'string', 'max:255','regex:/^[A-Z][a-zA-Z ñÑ]+$/'],
-            'lname' => ['required', 'string', 'max:255','regex:/^[A-Z][a-zA-Z ñÑ]+$/'],
+            'fname' => ['required', 'string', 'max:255','regex:/^[a-zA-Z ñÑ]+$/'],
+            'lname' => ['required', 'string', 'max:255','regex:/^[a-zA-Z ñÑ]+$/'],
+            // 'lname' => ['required', 'string', 'max:255','regex:/^[A-Z][a-zA-Z ñÑ]+$/'],
             'phone' => 'required | numeric | digits:12 | starts_with:639',
             'email' => 'required | email |unique:users',
-            'password' => 'required | min:5 | max:12|confirmed',
+            'password' => 'required | min:8 | max:12|confirmed',
         ]);
+        
     }
+
+    
 
     /**
      * Create a new user instance after a valid registration.
@@ -66,12 +81,33 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        Session::flash('success', 'User successfully created.');
+       
         return User::create([
-            'fname' => $data['fname'],
+            'fname' => Str::ucfirst($data['fname']),
             'lname' => $data['lname'],
             'phone' => $data['phone'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-        ]);
+        ])
+         
+        ;
+        // return redirect()->intended($this->redirectPath())->with('success','It is successMessage');
+        // return redirect()->back()->with('message', 'IT WORKS!');
+        // return redirect()->with(['success' => 'your message']);
+
+        // Session::flash('success', 'User successfully created.');
+       
     }
+
+   //Auth::login($user);
+//    $notification = array(
+//     'message' => 'Registration Completed!',
+//     'alert-type' => 'success'
+// );
+// return Redirect()->route('login')->with($notification);
+//return redirect(RouteServiceProvider::HOME)->with($notification);
+
+
+
 }
