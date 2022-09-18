@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Session;
 
 
 
+
 class RegisterController extends Controller
 {
     /*
@@ -34,13 +35,8 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = RouteServiceProvider::HOME ;
 
-//     public function redirectTo() : string
-// {
-//     return redirect('/patient/doctor-schedule')->withSuccess('Success message');
-    
-// }
 
     /**
      * Create a new controller instance.
@@ -67,7 +63,10 @@ class RegisterController extends Controller
             'phone' => 'required | numeric | digits:12 | starts_with:639',
             'email' => 'required | email |unique:users',
             'password' => 'required | min:8 | max:12|confirmed',
-        ]);
+
+            
+        ] 
+    );
         
     }
 
@@ -81,7 +80,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        Session::flash('success', 'User successfully created.');
+        Session::flash('message', 'User successfully created.');
        
         return User::create([
             'fname' => Str::ucfirst($data['fname']),
@@ -89,14 +88,16 @@ class RegisterController extends Controller
             'phone' => $data['phone'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-        ])
+
+            Session::flash('message', 'User successfully created')
+        ]) 
          
         ;
         // return redirect()->intended($this->redirectPath())->with('success','It is successMessage');
         // return redirect()->back()->with('message', 'IT WORKS!');
-        // return redirect()->with(['success' => 'your message']);
+        return redirect()->with(['message' => 'your message']);
 
-        // Session::flash('success', 'User successfully created.');
+        Session::flash('message', 'User successfully ');
        
     }
 
@@ -107,6 +108,7 @@ class RegisterController extends Controller
 // );
 // return Redirect()->route('login')->with($notification);
 //return redirect(RouteServiceProvider::HOME)->with($notification);
+
 
 
 
